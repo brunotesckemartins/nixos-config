@@ -103,10 +103,33 @@
   #   wget
   # ];
 
-  environment.systemPackages = with pkgs; [
-	git
-	wget
-];
+    environment.systemPackages = with pkgs; [
+    git
+    neovim
+    wget
+    fastfetch
+
+    # Apps
+    qbittorrent
+    nmap
+
+    # C
+    gcc
+    gnumake
+    gdb
+    pkg-config
+
+    # Rust
+    rustc
+    cargo
+    rust-analyzer
+    clippy
+    rustfmt
+
+    # Ruby
+    ruby
+    bundler
+  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
