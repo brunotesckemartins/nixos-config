@@ -74,6 +74,13 @@
     # jack.enable = true;
   };
 
+  hardware.bluetooth = {
+    enable = true;
+    # Enable the BlueZ service.
+    # services.bluez.enable = true;
+    powerOnBoot = true;
+  };
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.libinput.enable = true;
 
